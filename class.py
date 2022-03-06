@@ -20,3 +20,8 @@ df = spark.read.format(file_type) \
   .load(file_location)
 
 display(df)
+
+
+# COMMAND ----------
+
+df.describe(["_c4"]).show()
